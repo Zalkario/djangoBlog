@@ -10,6 +10,10 @@ class Category(models.Model):
         max_length= 255,
     )
 
+    def __str__(self) -> str:
+        return f"{self.title}"
+    
+    
 class Post(models.Model):
     """Модел (таб катег)
     """
